@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 - Shonan Shinies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Shonan Shinies</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">クラスについて</a></li>
+                    <li><a href="member.html">メンバー募集</a></li>
+                    <li><a href="faq.html" class="active">よくある質問</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 40vh; min-height: 250px;">
+        <div class="hero-content fade-in-up">
+            <h1>よくある質問</h1>
+            <p>保護者の皆様からよくいただくご質問</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content-section reveal">
+            <h3>入会・参加について</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">3歳（未就学児）でも入会できますか？</div>
+                <div class="faq-answer">
+                    はい、大歓迎です！Shonan
+                    Shiniesは未就学児から参加可能です。ボール遊びや簡単な運動を通じて、体を動かす楽しさを知ってもらうことから始めます。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">うちの子は運動が苦手で、ついていけるか心配です…</div>
+                <div class="faq-answer">
+                    ご安心ください。当クラスは「初心者向け」です。運動が苦手なお子様でも無理なく楽しめるプログラムを用意しています。体育の家庭教師経験のあるスタッフが、一人ひとりのペースに合わせてサポートします。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">練習中に子供が泣いてしまったり、集中できなかったりしたら…</div>
+                <div class="faq-answer">
+                    低学年や未就学児のお子様ですので、当然のことです！無理にやらせることはしません。休憩したり、見学したりしながら、少しずつ場所に慣れていければ大丈夫です。スタッフも慣れていますので、安心してお任せください。
+                </div>
+            </div>
+        </div>
+
+        <div class="section-cta reveal">
+            <p>まずは体験会で、クラスの雰囲気を肌で感じてみませんか？</p>
+            <a href="https://lin.ee/PRh5YRvO" class="btn-line" target="_blank">LINEで体験に申し込む</a>
+        </div>
+
+        <div class="content-section reveal">
+            <h3>保護者の関わりについて</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">保護者のお茶当番や鍵当番はありますか？</div>
+                <div class="faq-answer">
+                    いいえ、Shonan
+                    Shiniesでは保護者の方の「お茶当番」や「鍵当番」などの負担はありません。練習の送り迎えのみお願いしております（見学は自由です）。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">練習はずっと見ていないといけませんか？</div>
+                <div class="faq-answer">
+                    いいえ、送迎のみでも構いません。もちろん、お子様の頑張る姿をいつでも見学していただくことは大歓迎です！
+                </div>
+            </div>
+        </div>
+
+        <div class="section-cta reveal">
+            <p>その他、気になることがあればLINEでお気軽にご質問ください！</p>
+            <a href="https://lin.ee/PRh5YRvO" class="btn-line" target="_blank">LINEで質問する</a>
+        </div>
+
+        <div class="content-section reveal">
+            <h3>安全面について</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">バレーボールは突き指などの怪我が心配です。</div>
+                <div class="faq-answer">
+                    低学年・初心者クラスでは、柔らかいボール（ソフトバレーボールや軽量ボール）を使用します。また、正しい体の使い方や怪我をしないためのフォーム作りを、医療系国家資格を持つトレーナーが指導しますので、安全性には十分配慮しています。
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="sticky-cta">
+        <a href="https://lin.ee/PRh5YRvO" class="btn-line" target="_blank">LINEで体験・入会相談</a>
+    </div>
+
+    <footer>
+        <p>運営母体：湘南ブライト (Shonan Bright)</p>
+        <p>&copy; 2026 Shonan Shinies. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
