@@ -16,4 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const revealElements = document.querySelectorAll('.reveal');
     revealElements.forEach(el => observer.observe(el));
+
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav');
+
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    }
 });
